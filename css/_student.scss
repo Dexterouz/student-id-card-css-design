@@ -1,0 +1,74 @@
+.student {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .header {
+        width: 50%;
+        color: $color-blue;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        // background-color: #fff;
+        // background-color: red;
+        padding: 10px 10px 0 25px;
+        text-transform: uppercase;
+        
+        .logo img {
+            margin: 0 auto;
+        }
+
+        .school-name {
+            text-align: center;
+        }
+    }
+
+    .body {
+        display: flex;
+        justify-content: space-between;
+        background-color: $color-orange;
+        color: #fff;
+        padding: 25px;
+        padding-bottom: 0 !important;
+        z-index: -1;
+        .passport-foto{ 
+            padding: 5px;
+            padding-bottom: 0;
+            position: relative;
+            top: -65px;
+            background-color: $color-orange;
+            img {
+                border: 3px solid #fff;
+                width: 180px; 
+                height: 180px;
+            }
+        }
+
+        .text-wrapper {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            .text {
+                margin-bottom: 15px;
+                span:nth-child(2){
+                    font-size: 18px;
+                    margin-left: 10px;
+                    font-weight: 300;
+                    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+    }
+
+    .footer {
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        padding: 15px 25px 25px 25px;
+        background-color: $color-blue;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+}
